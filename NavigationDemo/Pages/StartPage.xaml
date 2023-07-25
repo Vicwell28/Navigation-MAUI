@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavigationDemo.Pages.StartPage"
+             Title="StartPage">
+    <VerticalStackLayout  
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        Spacing="10">
+        <Entry x:Name="txtEntry" Placeholder="Page WithOut ViewModel" />
+        <Entry Text="{Binding SendDataStartPageModel.Name}"  Placeholder="Page With ViewModel" />
+        <Button Clicked="Button_Clicked" Text="Go to second page"/>
+        <Button Clicked="Button_Clicked_1" Text="Go to modal page"/>
+        <Button Clicked="Button_Clicked_2" Text="Go To Send Data Without ViewModel"/>
+        <Button Clicked="Button_Clicked_3" Text="Go To Send Data With ViewModel"/>
+    </VerticalStackLayout>
+</ContentPage>
